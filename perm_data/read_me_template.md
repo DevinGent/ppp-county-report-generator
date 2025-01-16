@@ -4,7 +4,7 @@ This folder contains visualizations and data for PPP (Payroll Protection Program
 The data in this report can be freely obtained from the U.S. Small Business Administration website at: [https://data.sba.gov/dataset/ppp-foia](https://data.sba.gov/dataset/ppp-foia).  
 For information on NAICs codes or to look up a code, use: [https://www.census.gov/naics/](https://www.census.gov/naics/).
 
-The county report folder should include the following contents.  Note that each file can be toggled on or off at the creation of the report.  If any desired graphs or figures are missing from the report, try navigating to the section "Choose Files to Save" in the Jupyter Notebook `county_report_generator.ipynb` to adjust these settings.
+The county report folder should include the following contents.  Note that each file can be toggled on or off at the creation of the report (and pie charts will be automatically omitted if the county represents less than 1% of the state total).  If any desired graphs or figures are missing from the report, try navigating to the section "Choose Files to Save" in the Jupyter Notebook `county_report_generator.ipynb` to adjust these settings.
 
 # Folder Contents
 - [`cities.html`](#citieshtml)
@@ -39,4 +39,7 @@ A complete breakdown of PPP loan information for COUNTY_NAME, STATE_NAME as an E
 Two sets of boxplots summarizing, at the loan level, the number of loans approved and the amount of money approved. Each graph includes a boxplot for loans nationally, a boxplot for only those loans within STATE_NAME, and a boxplot for loans within COUNTY_NAME.
 
 ## `state_totals_pie_charts.png`
+Includes a simple pie chart comparing COUNTY_NAME, STATE_NAME to the rest of the state in number of loans, loan dollars, jobs reported, and charge-offs.  If the county represents less than 1% compared to the rest of the state, then that chart is omitted.  
+>[!NOTE]  
+>If the county represents less than 1% in each category, then no charts are included and the file `state_totals_pie_charts.png` is omitted.
 
