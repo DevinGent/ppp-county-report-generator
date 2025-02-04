@@ -25,7 +25,7 @@ More details on using the generator can be found in the comments within `county_
 ## Troubleshooting
 * Before running the report generator, please ensure you have all the required libraries installed (see below for a complete list of the required libraries which are not Python defaults).
 * If the report generator crashes early, there may have been trouble fetching the data from the SBA website.  The SBA regularly updates web addresses which can break the links in the script `datasets.py`.  If this happens you can manually update the list of links located in the function `ppp`.
-* A report is missing assets. Every report should include a `county_report.xlsx` and `REAME.md` file. Additional visualizations can be turned off at the time of creation. Navigate to the section "Choose Files to Save" in the Jupyter Notebook `county_report_generator.ipynb` to adjust these settings. 
+* If a report is missing assets, note that every report should include a `county_report.xlsx` and `REAME.md` file but additional visualizations can be turned off at the time of creation. Navigate to the section "Choose Files to Save" in the Jupyter Notebook `county_report_generator.ipynb` to adjust these settings. 
 
 ### Required Libraries
 * Pandas

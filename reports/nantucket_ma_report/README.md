@@ -2,7 +2,7 @@
 
 This folder contains visualizations and data for PPP (Payroll Protection Program) loans within Nantucket, MA.  All data is based upon the *project* state and county (as opposed to borrower state/county).  
 The data in this report can be freely obtained from the U.S. Small Business Administration website at: [https://data.sba.gov/dataset/ppp-foia](https://data.sba.gov/dataset/ppp-foia).  
-For information on NAICs codes or to look up a code, use: [https://www.census.gov/naics/](https://www.census.gov/naics/).
+For information on NAICs codes, or to look up a code, use: [https://www.census.gov/naics/](https://www.census.gov/naics/).
 
 The county report folder should include the following contents.  Note that each file can be toggled on or off at the creation of the report (and pie charts will be automatically omitted if the county represents less than 1% of the state total).  If any desired graphs or figures are missing from the report, try navigating to the section "Choose Files to Save" in the Jupyter Notebook `county_report_generator.ipynb` to adjust these settings.
 
@@ -33,7 +33,7 @@ A complete breakdown of PPP loan information for Nantucket, MA as an Excel workb
 * Demographics: Provides demographics information on PPP loans at the state and national level and within Nantucket. Note that most loans in the data provided by the SBA do not provide demographics information.  For instance, approximately 61% of PPP loans nationally do not identify gender and approximately 75% do not identify race.
 * Business Types: Breaks down loan information by business sector and provides a list of the five sectors with the most loans and the five sectors with the most loan dollars approved within Nantucket.
 * Outliers (by loans): Provides a more complete set of outliers in which the number of loans approved in Nantucket differed from the rest of the state.
-* Outliers (by loans): Provides a more complete set of outliers in which the amount of loan dollars approved in Nantucket differed from the rest of the state.
+* Outliers (by loan dollars): Provides a more complete set of outliers in which the amount of loan dollars approved in Nantucket differed from the rest of the state.
 
 ## `loan_level_boxplots.png`
 Two sets of boxplots summarizing, at the loan level, the number of loans approved and the amount of money approved. Each graph includes a boxplot for loans nationally, a boxplot for only those loans within MA, and a boxplot for loans within Nantucket.
